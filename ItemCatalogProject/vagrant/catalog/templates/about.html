@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+    <div class="jumbotron">
+        <h1>About</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="/static/images/Genie.png" class="img-responsive">
+            </div>
+            <div class="col-md-9">
+                <p>
+                This Item Catalog Web Application provides a list of categories (bottles) with a variety of items within those categories and integrates third party user registration and authentication. Authenticated users should have the ability to post, edit, and delete their own items.
+                </p>
+                <p>
+                This application was built with Python, Flask, SQLAlchemy, HTML5, CSS, Bootstrap, and Google Oauth2 API.</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

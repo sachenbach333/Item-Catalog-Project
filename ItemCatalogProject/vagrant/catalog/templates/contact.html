@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<style>
+.form {
+  color: white;
+  margin: auto; 
+  padding: 15px 0 5px 0; 
+  border: 0;
+  border-bottom: 0;
+  width: 1024px;
+  box-shadow: inset 0px 0px 0px 0px;   
+  -webkit-box-shadow: inset 0px 0px 0px 0px;
+}
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+</style>
+<form class="form" action="/action_page.php">
+  <h2 class="form">Contact Us</h2>
+First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  <br>
+  Email:<br>
+  <input type="text" name="lastname">
+  <br><br>
+  <textarea name="message" rows="10" cols="30"></textarea>
+  <br>
+  <input class="button" type="submit" value="Submit">
+</form>
+
+
+{% endblock %}

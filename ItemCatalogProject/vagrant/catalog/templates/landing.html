@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+<style>
+body  {
+    background-image:url('/static/images/Genie.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+</style>
+    <div class="row text-center welcome-msg" color="white">
+        <h1>Genie's Bottle Catalog</h1>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4 col-md-offset-4">
+            <p class="lead" color="white"> The Genie invites you to explore her bottle catalog. If you wish to add your own items and even create new categories, you must first login.</p>
+            <a href="/catalog">
+                <button class="btn btn-default" role="button">
+                    View Catalog &raquo;
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
